@@ -1,0 +1,8 @@
+allprojects {
+  ext.RepoConfigurator = {
+    maven {
+      url = uri('https://docker.demo.com/repository/maven-group') }
+  }
+  buildscript.repositories RepoConfigurator
+  repositories RepoConfigurator
+}
